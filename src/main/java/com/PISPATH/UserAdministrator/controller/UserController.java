@@ -88,7 +88,8 @@ public class UserController {
             @RequestParam String cityUser,
             @RequestParam String countryUser) {
     	
-        	UserModel user = new UserModel(nameUser, lastNameUser, emailUser, passwUser, telUser, cityUser, countryUser);
+            UserModel user = new UserModel(nameUser, lastNameUser, emailUser, passwUser, telUser, cityUser, countryUser);
+	    userService.ingresarUsuario(user);
             return "redirect:/login"; 
         	
         	
