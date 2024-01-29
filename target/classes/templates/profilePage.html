@@ -1,0 +1,58 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Opciones del Perfil</title>
+    <link rel ="stylesheet" href = "css/profile.css">
+    <script src="js/login.js"></script>
+</head>
+<script>
+    function redireccionar() {
+        window.location.href = '/login';
+    }
+    
+    function redireccionarCS() {
+        window.location.href = '/comingSoon';
+    }
+    
+</script>
+<body>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+   <div class="content">
+      <div class="card" onclick="redireccionarCS()">
+         
+            <div class="icon"><i class="material-icons md-36">face</i></div>
+            <p class="title">Perfil</p>
+         
+      </div>
+
+      <div class="card" onclick="redireccionarCS()">
+         
+            <div class="icon"><i class="material-icons md-36">favorite_border</i></div>
+            <p class="title">Favoritos</p>
+         
+      </div>
+
+      <div class="card" onclick="redireccionarCS()">
+         
+            <div class="icon"><i class="material-icons md-36">alternate_email</i></div>
+            <p class="title">Contactos</p>         
+      </div>
+
+
+	<div class="card" onclick="redireccionar()">
+        <div class="icon"><i class="material-icons md-36">close</i></div>
+        <p class="title">Salir</p>
+	</div>
+	
+	
+
+   
+   </div>
+</div>
+</body>
+</html>
